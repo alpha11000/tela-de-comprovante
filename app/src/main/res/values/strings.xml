@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TelaComprovante</string>
+    <string name="screen_title">Boleto Gerado com Sucesso!</string>
+    <string name="confirmation_period">O pagamento do boleto pode levar até 3 dias úteis para ser confirmado.</string>
+    <string name="bill_value">Valor do boleto</string>
+    <string name="expiration_date">Data de Vencimento</string>
+    <string name="copy_barcode">Copiar código de barras</string>
+    <string name="open_document">Abrir documento</string>
+    <string name="share_document">Compartilhar documento</string>
+    <string name="successfully_copied">Código de barras copiado com sucesso!</string>
+</resources>
