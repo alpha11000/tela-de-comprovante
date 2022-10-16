@@ -14,20 +14,17 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val b = Boleto(0, 0, "", 1000.0)
+        val gson = Gson()
 
-        val gson : Gson = Gson()
+        val jsonContent = FileUtil.readFromAsset(this, "boleto_response.json")
 
-        val test = gson.toJson(b)
-        println(test)
+        val boleto = gson.fromJson(jsonContent, boleto::class.java)
 
-        val boleto = gson.fromJson(test, Boleto::class.java)
-
-        binding.valueTv.text = "R$ " + boleto.valorPagar
+        binding.valueTv.text = getString(R.string.value_text, boleto.valorPagar)
 
         binding.copyButton.setOnClickListener{
-            Toast.makeText(this, test, Toast.LENGTH_SHORT).show()
-            //Toast.makeText(this, getString(R.string.successfully_copied), Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, jsonContent, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.successfully_copied), Toast.LENGTH_SHORT).show()
         }
     }
 }

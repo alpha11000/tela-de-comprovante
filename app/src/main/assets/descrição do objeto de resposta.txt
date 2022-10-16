@@ -1,0 +1,20 @@
+Descrição dos Campos no Objeto Boleto Response:
+
+boleto
+  tipo: Objeto JSON
+  campos:
+    dataHoraGeradoTimestamp
+      tipo: Long
+      descrição: timestamp da data e hora da geração do boleto.
+
+    dataVencimentoTimestamp
+      tipo: Long
+      descrição: timestamp da data de vencimento do boleto.
+
+    linhaDigitavel
+      tipo: String
+      descrição: código de barras do boleto.
+
+    valorPagar
+      tipo: Double
+      descrição: valor do documento a ser pago, já com os devidos encargos.

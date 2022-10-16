@@ -1,6 +1,6 @@
 package com.example.telacomprovante
 
-data class Boleto(
+data class boleto(
     val dataHoraGeradoTimestamp : Long,
     val dataVencimentoTimestamp : Long,
     val linhaDigitavel : String,
