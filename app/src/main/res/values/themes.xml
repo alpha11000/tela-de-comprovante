@@ -22,7 +22,7 @@
     </style>
 
     <style name="buttons_style" parent="normal_text_style">
-        <item name="android:background">@drawable/round_corners_rectangle</item>
+        <item name="android:background">@drawable/ripple_effect</item>
         <item name="android:textSize">12sp</item>
     </style>
 
