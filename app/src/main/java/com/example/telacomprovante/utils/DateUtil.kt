@@ -1,5 +1,8 @@
 package com.example.telacomprovante.utils
 
+import java.sql.Time
+import java.text.DecimalFormat
+import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -8,10 +11,16 @@ object DateUtil {
         try{
             val sdf = SimpleDateFormat(format)
             val date = Date(timeStamp * 1000)
+            sdf.timeZone = TimeZone.getTimeZone("Brazil/Brasilia")
 
             return sdf.format(date)
         }catch (e : Exception){
             return null
         }
+    }
+
+    fun getFormatedNumber(number : Double) : String{
+        val numberFormat = NumberFormat.getNumberInstance(Locale.ITALY)
+        return numberFormat.format(number)
     }
 }

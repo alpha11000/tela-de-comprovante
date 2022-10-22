@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val boleto = JsonUtil.convertJsonAssetToObject(this, "boleto_response.json", JsonObject::class.java).boleto
 
-        binding.valueTv.text = getString(R.string.value_text, boleto.valorPagar)
+        binding.valueTv.text = getString(R.string.value_text, DateUtil.getFormatedNumber(boleto.valorPagar))
         binding.emissionDateTv.text = DateUtil.convertTimeToDateString(boleto.dataHoraGeradoTimestamp, "dd/MM/yyyy, HH:mm")
         binding.expirationDateTv.text = DateUtil.convertTimeToDateString(boleto.dataVencimentoTimestamp)
 
