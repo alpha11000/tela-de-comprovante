@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val base64 = JsonUtil.convertJsonAssetToObject(this, "boleto_base64.json", JsonObject::class.java).file
 
         val pdfFileUri = FileUtil.base64ToPDF(this, base64, "boleto.pdf")
-
+/*
         binding.openButton.setOnClickListener {
             FileUtil.openFile(this, pdfFileUri, base64.mime)
         }
@@ -37,6 +37,6 @@ class MainActivity : AppCompatActivity() {
         binding.copyButton.setOnClickListener{
             ClipboardUtil.copyToClipboard(this, "text", boleto.linhaDigitavel)
             Toast.makeText(this, getString(R.string.successfully_copied), Toast.LENGTH_SHORT).show()
-        }
+        }*/
     }
 }
