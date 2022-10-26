@@ -3,6 +3,7 @@
     <color name="green_darker">#16553C</color>
     <color name="text_light_secondary">#3A3A3A</color>
     <color name="gray_dark_primary">#CBCBCB</color>
+    <color name="button_white">#FCFCFC</color>
     <color name="white_primary">#F6F6F6</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

@@ -1,7 +1,5 @@
 package com.example.telacomprovante.utils
 
-import java.sql.Time
-import java.text.DecimalFormat
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
@@ -19,7 +17,7 @@ object DateUtil {
         }
     }
 
-    fun getFormatedNumber(number : Double) : String{
+    fun getFormattedNumber(number : Double) : String{
         val numberFormat = NumberFormat.getNumberInstance(Locale.ITALY)
         return numberFormat.format(number)
     }
