@@ -22,7 +22,15 @@
         <item name="textAllCaps">false</item>
     </style>
 
-    <style name="buttons_style" parent="normal_text_style">
+    <style name="buttons_style" parent="normal_text_style"><item name="android:layout_height">92dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">end</item>
         <item name="android:background">@drawable/ripple_effect</item>
         <item name="android:backgroundTint">@color/button_white</item>
         <item name="android:textSize">12sp</item>

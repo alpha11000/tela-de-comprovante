@@ -118,18 +118,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingVertical="12dp"
-            android:paddingHorizontal="16dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="6dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/copy_button"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
-
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="20dp"
-
                 style="@style/buttons_style"
                 android:drawableTop="@drawable/ic_baseline_content_copy_24"
                 android:text="@string/copy_barcode"/>
@@ -137,12 +132,6 @@
             <Button
                 android:id="@+id/open_button"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginHorizontal="14dp"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="20dp"
-
                 style="@style/buttons_style"
                 android:drawableTop="@drawable/ic_outline_description_24"
                 android:text="@string/open_document"/>
@@ -150,11 +139,6 @@
             <Button
                 android:id="@+id/share_button"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
-
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="20dp"
-
                 style="@style/buttons_style"
                 android:drawableTop="@drawable/ic_outline_share_24"
                 android:text="@string/share_document"/>
